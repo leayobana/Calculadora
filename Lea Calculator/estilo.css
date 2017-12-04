@@ -1,0 +1,66 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: #4B8A08;
+}
+
+table {     
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  background: black;
+  font-size: 14px;  
+  margin: 20px;     
+  width: 480px; 
+  text-align: left;    
+  border-collapse: separate; 
+  border: #e5e5e5 3px solid; 
+ }
+
+th {     
+	font-size: 13px;     
+	font-weight: normal;     
+	padding: 8px;     
+	background: #b9c9fe;
+  border-top: 4px solid #aabcfe;   
+  border-bottom: 1px solid #fff; 
+  color: #039; 
+}
+
+td {    
+	padding: 8px;     
+	background: #5FB404;     
+	border-bottom: 1px solid #fff;
+  color: #669;    
+  border-top: 1px solid transparent; 
+  cursor:pointer; 
+  width: 20;
+}
+
+td:hover { 
+	background: #d0dafd; 
+	color: #339; 
+}
+
+input.anchofijo {
+	width: 130px;
+}
+
+p {
+	color:black;
+  font-family: cursive;
+	font-size: 20px;
+}
+
+div.bordes {   
+   background: #80FF00;
+   border:5px solid #fefefe; 
+   outline:thin solid #efefef;
+   margin-left: 400;
+   margin-right: 400;   
+}
+
+canvas{
+  background:#FFFF00;
+ }
+ 
+input{
+  background:#ffffff;
+}

@@ -1,0 +1,62 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lea Calculator</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+	
+    <script type="text/javascript" src="calcular.js"></script>  
+</head>
+<body>    
+<div class="bordes" align="center">
+<table>   
+     <caption><h1>SCIENTIFIC CALCULATOR LEA</h1></caption>  
+     <tr align="center" valign="middle">
+      <td colspan="10">
+        <input type="text" id="result" disabled>         
+        </td>
+     </tr>
+    <tr>      
+      <td align="center" onclick="concatenar(1)"><p>1</p></td> 
+      <td align="center" onclick="concatenar(2)"><p>2</p></td> 
+      <td align="center" onclick="concatenar(3)"><p>3</p></td> 
+      <td align="center" onclick="concatenar(4)"><p>4</p></td> 
+      <td align="center" onclick="concatenar(5)"><p>5</p></td> 
+      <td align="center" onclick="concatenar(6)"><p>6</p></td> 
+      <td align="center" onclick="concatenar(7)"><p>7</p></td> 
+      <td align="center" onclick="concatenar(8)"><p>8</p></td> 
+      <td align="center" onclick="concatenar(9)"><p>9</p></td> 
+      <td align="center" onclick="concatenar(0)"><p>0</p></td> 
+    </tr>
+    <tr>
+      <td align="center" onclick="concatenar('+')"><p>+</p></td> 
+      <td align="center" onclick="concatenar('-')"><p>-</p></td> 
+      <td align="center" onclick="concatenar('*')"><p>*</p></td> 
+      <td align="center" onclick="concatenar('/')"><p>/</p></td> 
+      <td align="center" onclick="concatenar('v(')"><img src="raiz.png"/></td> 
+      <td align="center" onclick="concatenar('^2')"><img src="xcuad.png"/></td> 
+      <td align="center" onclick="concatenar('X')"><img src="x.png"/></td> 
+      <td align="center" onclick="concatenar('(')"><p>(</p></td>
+      <td align="center" onclick="concatenar(')')"><p>)<p></td>
+    <tr> 
+      <td align="center" onclick="concatenar('Sin(')"><p>senx</p></td> 
+      <td align="center" onclick="concatenar('Cos(')"><p>cosx</p></td> 
+      <td align="center" onclick="concatenar('Tan(')"><p>tanx</p></td> 
+      <td align="center" colspan="3" onclick="igual(1)"><p>=</p></td> 
+      <td colspan="2" align="center" onclick="reiniciar()" title="limpiar la memoria"><p>C</p></td>
+      <td colspan="2" align="center" onclick="graficar(1)"><p>graficar</p></td>      
+    </tr>      
+  </table>
+
+<div style="margin:20px;"> 
+  escala: <input type="range" min="0" max="10" step="2" name="rango" value ="0" onchange="graficar(this.value)"/>
+  <label id="lblrango">
+
+</div>
+<br>
+   <canvas id="myCanvas" width="400" height="200" style="border:1px solid #c3c3c3; margin: 20px;">
+       Your browser does not support the HTML5 canvas tag.
+    </canvas>
+  
+</div>   
+</body>
+</html>
